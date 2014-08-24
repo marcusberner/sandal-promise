@@ -42,7 +42,8 @@
 	}
 	if (typeof window !== 'undefined') {
 		if (!window.Sandal) throw new Error('Sandal must be loaded before sandal-promise');
-		window.Sandal.extend(sandalPromise(window.Q));
+		window.sandalPromise = sandalPromise(window.Q);
+		window.Sandal.extend(sandalPromise);
 	}
 
 })();
