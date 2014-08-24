@@ -81,6 +81,6 @@ test('Promise one of many non existing', function (t) {
 });
 
 test('Cleanup', function (t) {
-	delete Sandal.prototype.autowire;
+	delete Sandal.prototype.promise;
 	t.end();
 });
