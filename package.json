@@ -1,0 +1,33 @@
+{
+  "name": "sandal-promise",
+  "description": "Promise extension for sandal",
+  "version": "0.0.0",
+  "main": "index",
+  "author": "Marcus Berner <marcus@burner.se>",
+  "dependencies": {
+    "q": "~1.0.1"
+  },
+  "devDependencies": {
+    "tape": "2.12.1",
+    "sandal": "2.3.1"
+  },
+  "scripts": {
+    "test": "tape test/*.js test/**/*.js"
+  },
+  "keywords": [
+    "sandal-promise",
+	  "promise",
+    "sandal",
+    "ioc",
+    "inversion of control",
+    "dependency injection"
+  ],
+  "license": {
+    "type": "MIT",
+    "url": "https://github.com/marcusberner/sandal-promise/raw/master/LICENSE"
+  },
+  "repository": "git://github.com/marcusberner/sandal-promise",
+  "engines": {
+    "node": "*"
+  }
+}
