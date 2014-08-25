@@ -1,7 +1,7 @@
 {
   "name": "sandal-promise",
   "description": "Promise extension for sandal",
-  "version": "0.0.0",
+  "version": "0.0.1",
   "main": "sandal-promise",
   "author": "Marcus Berner <marcus@burner.se>",
   "dependencies": {
@@ -10,20 +10,20 @@
   "devDependencies": {
     "tape": "2.12.1",
     "sandal": "3.0.0",
-	  "sync-pkg": "0.1.2",
-	  "pre-commit": "~0.0.4"
+    "sync-pkg": "0.1.2",
+    "pre-commit": "~0.0.4"
   },
-	"pre-commit": [
-		"build",
-		"update-bower-config",
-		"add-build"
-	],
+  "pre-commit": [
+    "build",
+    "update-bower-config",
+    "add-build"
+  ],
   "scripts": {
     "test": "tape test/*.js test/**/*.js"
   },
   "keywords": [
     "sandal-promise",
-	  "promise",
+    "promise",
     "sandal",
     "ioc",
     "inversion of control",
