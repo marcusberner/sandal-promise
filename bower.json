@@ -1,0 +1,23 @@
+{
+  "name": "sandal-promise",
+  "description": "Promise extension for the sandal dependency injection framework",
+  "version": "0.0.0",
+  "main": [
+    "sandal-promise"
+  ],
+  "keywords": [
+	"sandal",
+	"promise",
+    "dependency injection",
+    "ioc",
+    "inversion of control"
+  ],
+  "ignore": [
+    ".idea",
+    "node_modules",
+    "test",
+    ".gitignore",
+    ".npmignore",
+    ".travis.yml"
+  ]
+}
