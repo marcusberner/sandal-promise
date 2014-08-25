@@ -9,7 +9,7 @@
   },
   "devDependencies": {
     "tape": "2.12.1",
-    "sandal": "2.3.1"
+    "sandal": "3.0.0"
   },
   "scripts": {
     "test": "tape test/*.js test/**/*.js"
