@@ -1,7 +1,7 @@
 {
   "name": "sandal-promise",
   "description": "Promise extension for sandal",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "main": "sandal-promise",
   "author": "Marcus Berner <marcus@burner.se>",
   "dependencies": {
@@ -15,12 +15,12 @@
   },
   "pre-commit": [
     "update-bower-config",
-	  "add-bower-config"
+    "add-bower-config"
   ],
   "scripts": {
     "test": "tape test/*.js test/**/*.js",
-	  "update-bower-config": "sync",
-	  "add-bower-config": "git add bower.json"
+    "update-bower-config": "sync",
+    "add-bower-config": "git add bower.json"
   },
   "keywords": [
     "sandal-promise",

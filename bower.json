@@ -1,7 +1,7 @@
 {
   "name": "sandal-promise",
   "description": "Promise extension for the sandal dependency injection framework",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "main": [
     "sandal-promise"
   ],
