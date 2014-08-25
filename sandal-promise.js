@@ -42,8 +42,7 @@
 	}
 	if (typeof window !== 'undefined') {
 		if (!window.Sandal) throw new Error('Sandal must be loaded before sandal-promise');
-		window.sandalPromise = sandalPromise(window.Q);
-		window.Sandal.extend(sandalPromise);
+		window.Sandal.extend(sandalPromise(window.Q));
 	}
 
 })();
