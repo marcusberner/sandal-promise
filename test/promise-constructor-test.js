@@ -2,7 +2,7 @@
 var test = require("tape"),
 	Sandal = require('sandal');
 
-Sandal.extend(require('../index.js'));
+Sandal.extend(require('../sandal-promise.js'));
 var sandal = new Sandal();
 
 require('./test-container.js')(test, sandal);

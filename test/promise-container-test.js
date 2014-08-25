@@ -5,7 +5,7 @@ var test = require("tape"),
 
 test('Extend container', function (t) {
 	t.notOk(sandal.promise, 'should not have an promise fcn');
-	sandal.extend(require('../index.js'));
+	sandal.extend(require('../sandal-promise.js'));
 	t.end();
 });
 
