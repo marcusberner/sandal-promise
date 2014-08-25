@@ -2,7 +2,7 @@
   "name": "sandal-promise",
   "description": "Promise extension for sandal",
   "version": "0.0.0",
-  "main": "index",
+  "main": "sandal-promise",
   "author": "Marcus Berner <marcus@burner.se>",
   "dependencies": {
     "q": "~1.0.1"
