@@ -1,13 +1,13 @@
 {
   "name": "sandal-promise",
   "description": "Promise extension for the sandal dependency injection framework",
-  "version": "0.0.0",
+  "version": "0.0.1",
   "main": [
     "sandal-promise"
   ],
   "keywords": [
-	"sandal",
-	"promise",
+    "sandal",
+    "promise",
     "dependency injection",
     "ioc",
     "inversion of control"

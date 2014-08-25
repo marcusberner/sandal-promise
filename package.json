@@ -14,12 +14,13 @@
     "pre-commit": "~0.0.4"
   },
   "pre-commit": [
-    "build",
     "update-bower-config",
-    "add-build"
+	  "add-bower-config"
   ],
   "scripts": {
-    "test": "tape test/*.js test/**/*.js"
+    "test": "tape test/*.js test/**/*.js",
+	  "update-bower-config": "sync",
+	  "add-bower-config": "git add bower.json"
   },
   "keywords": [
     "sandal-promise",
