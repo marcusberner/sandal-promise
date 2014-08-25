@@ -9,8 +9,15 @@
   },
   "devDependencies": {
     "tape": "2.12.1",
-    "sandal": "3.0.0"
+    "sandal": "3.0.0",
+	  "sync-pkg": "0.1.2",
+	  "pre-commit": "~0.0.4"
   },
+	"pre-commit": [
+		"build",
+		"update-bower-config",
+		"add-build"
+	],
   "scripts": {
     "test": "tape test/*.js test/**/*.js"
   },
