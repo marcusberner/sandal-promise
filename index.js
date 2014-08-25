@@ -22,12 +22,13 @@
 						defer.reject(arguments[0]);
 						return;
 					}
-					var result = {};
+					var result = [];
 					if (resolveOne) {
 						result = arguments[1];
 					} else {
 						for (var j = 0; j < components.length; j++) {
-							result[components[j]] = arguments[j + 1];
+							//result[components[j]] = arguments[j + 1];
+							result.push(arguments[j + 1]);
 						}
 					}
 					defer.resolve(result);
