@@ -13,7 +13,7 @@ Sandal-promise extends the [sandal](https://github.com/marcusberner/sandal) depe
 
 ### Bower
 
-    $ npm install sandal-promise
+    $ bower install sandal-promise
 
 ## Usage
 
