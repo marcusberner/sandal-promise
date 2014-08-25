@@ -1,11 +1,13 @@
 module.exports = function (test, sandal) {
 
 	test('Register some components', function (t) {
+		var counter = 0;
 		sandal
 			.object('a', { data: 'data' })
 			.factory('b', function (a) { return 'b' + a.data; })
 			.factory('err', function(done) { done(new Error('Some error')); })
-			.object('c', 'c object');
+			.object('c', 'c object')
+			.factory('trans', function () { return 'trans' + counter++; }, true);
 		t.end();
 	});
 
@@ -21,6 +23,18 @@ module.exports = function (test, sandal) {
 			var expected = [
 				'c object',
 				'bdata'
+			];
+			t.deepEqual(result, expected, 'should get all dependencies as object');
+			t.end();
+		});
+	});
+
+	test('Resolve many with duplicates with promise', function (t) {
+		sandal.promise('trans', 'b', 'trans').then(function (result) {
+			var expected = [
+				'trans0',
+				'bdata',
+				'trans1'
 			];
 			t.deepEqual(result, expected, 'should get all dependencies as object');
 			t.end();
